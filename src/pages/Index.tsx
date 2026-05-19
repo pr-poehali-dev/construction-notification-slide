@@ -112,12 +112,29 @@ export default function Index() {
               о строительстве<br />
               <span style={{ color: 'hsl(40,85%,60%)' }}>ИЖС</span>
             </h1>
-            <p className="text-blue-100 text-base md:text-lg max-w-md leading-relaxed">
-              Уведомление о планируемом строительстве объекта индивидуального жилищного строительства
-            </p>
+            <div className="flex flex-col sm:flex-row gap-3 mt-5">
+              <div className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-lg px-4 py-3">
+                <div className="w-8 h-8 rounded bg-[hsl(213,72%,50%)] flex items-center justify-center shrink-0">
+                  <Icon name="HardHat" size={15} className="text-white" />
+                </div>
+                <div>
+                  <p className="text-white font-montserrat font-semibold text-sm leading-snug">О начале строительства</p>
+                  <p className="text-blue-200 text-xs">Подаётся до начала работ · ст. 51.1 ГрК РФ</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-lg px-4 py-3">
+                <div className="w-8 h-8 rounded bg-[hsl(145,55%,35%)] flex items-center justify-center shrink-0">
+                  <Icon name="CheckCircle" size={15} className="text-white" />
+                </div>
+                <div>
+                  <p className="text-white font-montserrat font-semibold text-sm leading-snug">Об окончании строительства</p>
+                  <p className="text-blue-200 text-xs">Не позднее 1 месяца после завершения · ст. 55 ГрК РФ</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="flex flex-wrap gap-6 mt-8 animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0 }}>
+          <div className="flex flex-wrap gap-6 mt-6 animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0 }}>
             <div className="flex items-center gap-2 text-blue-100 text-sm">
               <Icon name="Calendar" size={15} className="text-[hsl(40,85%,60%)]" />
               <span>Статья 51.1 ГрК РФ</span>
