@@ -3,7 +3,7 @@ import Icon from '@/components/ui/icon';
 const HOUSE_IMAGE = "https://cdn.poehali.dev/projects/d7a4edf2-d889-4a46-ae7f-a7e05b527450/files/554208c2-c3e8-405f-8dce-4937d6ab8c09.jpg";
 
 const infoRows = [
-  { label: "Вид разрешённого использования", value: "Индивидуальное жилищное строительство" },
+  { label: "Вид разрешённого использования", value: "ИЖС, ЛПХ, садовые и дачные участки" },
   { label: "Категория земель", value: "Земли населённых пунктов" },
   { label: "Тип объекта", value: "Жилой дом" },
   { label: "Этажность", value: "2 надземных этажа" },
