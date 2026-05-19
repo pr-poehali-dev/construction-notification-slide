@@ -147,6 +147,10 @@ export default function Index() {
               <Icon name="Clock" size={15} className="text-[hsl(40,85%,60%)]" />
               <span>Ответ — 7 рабочих дней</span>
             </div>
+            <div className="flex items-center gap-2 text-blue-100 text-sm">
+              <Icon name="ShieldCheck" size={15} className="text-[hsl(40,85%,60%)]" />
+              <span>Без ошибок и отказов</span>
+            </div>
           </div>
         </div>
       </section>
