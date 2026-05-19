@@ -141,7 +141,7 @@ export default function Index() {
             </div>
             <div className="flex items-center gap-2 text-blue-100 text-sm">
               <Icon name="MapPin" size={15} className="text-[hsl(40,85%,60%)]" />
-              <span>Населённые пункты РФ</span>
+              <span>Краснодарский край</span>
             </div>
             <div className="flex items-center gap-2 text-blue-100 text-sm">
               <Icon name="Clock" size={15} className="text-[hsl(40,85%,60%)]" />
