@@ -4,8 +4,13 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 20% 97%;
+    --foreground: 215 35% 12%;
+
+    --gov-blue: 213 72% 28%;
+    --gov-blue-light: 213 72% 38%;
+    --gov-gold: 40 85% 48%;
+    --gov-gray: 215 15% 55%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
