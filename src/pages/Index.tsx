@@ -108,9 +108,9 @@ export default function Index() {
               className="font-montserrat text-white text-3xl md:text-5xl leading-tight max-w-xl mb-4"
               style={{ fontWeight: 800 }}
             >
-              Уведомление<br />
+              Уведомления<br />
               о строительстве<br />
-              <span style={{ color: 'hsl(40,85%,60%)' }}>ИЖС</span>
+              <span style={{ color: 'hsl(40,85%,60%)' }}>жилых домов</span>
             </h1>
             <div className="flex flex-col sm:flex-row gap-3 mt-5">
               <div className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-lg px-4 py-3">
