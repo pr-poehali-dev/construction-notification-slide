@@ -11,22 +11,22 @@ const infoRows = [
   { label: "Площадь застройки", value: "Не более 1 500 м²" },
 ];
 
-const stepsStart = [
+const steps = [
   {
     num: "01",
     icon: "FileText",
     title: "Подача уведомления",
-    desc: "Направить уведомление о планируемом строительстве в уполномоченный орган",
+    desc: "Направление уведомления о планируемом строительстве в уполномоченный орган",
   },
   {
     num: "02",
     icon: "Search",
     title: "Проверка документов",
-    desc: "Орган проверяет соответствие параметров градостроительным требованиям",
+    desc: "Уполномоченный орган проверяет соответствие параметров установленным требованиям",
   },
   {
     num: "03",
-    icon: "MessageSquare",
+    icon: "CheckCircle",
     title: "Получение ответа",
     desc: "Орган направляет уведомление о соответствии или несоответствии в течение 7 рабочих дней",
   },
@@ -34,34 +34,7 @@ const stepsStart = [
     num: "04",
     icon: "HardHat",
     title: "Начало строительства",
-    desc: "После положительного ответа можно приступать к строительным работам",
-  },
-];
-
-const stepsEnd = [
-  {
-    num: "01",
-    icon: "ClipboardCheck",
-    title: "Завершение работ",
-    desc: "Завершить строительство и подготовить технический план объекта",
-  },
-  {
-    num: "02",
-    icon: "Send",
-    title: "Подача уведомления",
-    desc: "Направить уведомление об окончании строительства не позднее 1 месяца после завершения работ",
-  },
-  {
-    num: "03",
-    icon: "Eye",
-    title: "Осмотр объекта",
-    desc: "Уполномоченный орган вправе провести осмотр построенного объекта на соответствие параметрам",
-  },
-  {
-    num: "04",
-    icon: "Award",
-    title: "Направление в Росреестр",
-    desc: "Орган самостоятельно направляет документы в Росреестр для постановки на кадастровый учёт",
+    desc: "После получения положительного ответа можно приступать к строительным работам",
   },
 ];
 
@@ -198,96 +171,35 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Уведомление о начале строительства */}
-        <div className="mb-10">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="w-8 h-8 rounded-lg bg-[hsl(213,72%,28%)] flex items-center justify-center">
-              <Icon name="HardHat" size={16} className="text-white" />
-            </div>
-            <div>
-              <div className="text-[10px] uppercase tracking-widest text-[hsl(215,15%,55%)] font-montserrat">Этап 1</div>
-              <h2 className="font-montserrat font-bold text-xl text-[hsl(215,35%,12%)] leading-tight">
-                Уведомление о начале строительства
-              </h2>
-            </div>
-          </div>
-          <p className="text-sm text-[hsl(215,15%,55%)] ml-11 mb-6">
-            Подаётся до начала строительных работ. Основание — ст. 51.1 ГрК РФ.
-          </p>
-
-          <div className="grid md:grid-cols-4 gap-4">
-            {stepsStart.map((step, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow duration-200"
-              >
-                <div className="absolute top-3 right-4 font-montserrat font-bold text-5xl text-gray-50 leading-none select-none">
-                  {step.num}
-                </div>
-                <div className="w-10 h-10 rounded-lg bg-[hsl(213,72%,28%)]/10 flex items-center justify-center mb-4">
-                  <Icon name={step.icon} fallback="Circle" size={20} className="text-[hsl(213,72%,28%)]" />
-                </div>
-                <h3 className="font-montserrat font-bold text-sm text-[hsl(215,35%,12%)] mb-2 leading-snug">
-                  {step.title}
-                </h3>
-                <p className="text-xs text-[hsl(215,15%,55%)] leading-relaxed">
-                  {step.desc}
-                </p>
-                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-[hsl(213,72%,28%)] group-hover:w-full transition-all duration-300" />
-              </div>
-            ))}
-          </div>
+        {/* Порядок подачи */}
+        <div className="flex items-center gap-4 mb-10">
+          <div className="w-1 h-7 bg-[hsl(40,85%,48%)] rounded-full" />
+          <h2 className="font-montserrat font-bold text-xl text-[hsl(215,35%,12%)]">
+            Порядок подачи уведомления
+          </h2>
         </div>
 
-        {/* Разделитель */}
-        <div className="flex items-center gap-4 my-10">
-          <div className="flex-1 h-px bg-gray-200" />
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-100 rounded-full">
-            <Icon name="ArrowDown" size={13} className="text-[hsl(215,15%,55%)]" />
-            <span className="text-xs text-[hsl(215,15%,55%)] font-montserrat font-semibold uppercase tracking-wide">Затем</span>
-          </div>
-          <div className="flex-1 h-px bg-gray-200" />
-        </div>
-
-        {/* Уведомление об окончании строительства */}
-        <div className="mb-12">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="w-8 h-8 rounded-lg bg-[hsl(145,55%,35%)] flex items-center justify-center">
-              <Icon name="CheckCircle" size={16} className="text-white" />
-            </div>
-            <div>
-              <div className="text-[10px] uppercase tracking-widest text-[hsl(215,15%,55%)] font-montserrat">Этап 2</div>
-              <h2 className="font-montserrat font-bold text-xl text-[hsl(215,35%,12%)] leading-tight">
-                Уведомление об окончании строительства
-              </h2>
-            </div>
-          </div>
-          <p className="text-sm text-[hsl(215,15%,55%)] ml-11 mb-6">
-            Подаётся не позднее 1 месяца после завершения строительства. Основание — ст. 55 ГрК РФ.
-          </p>
-
-          <div className="grid md:grid-cols-4 gap-4">
-            {stepsEnd.map((step, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow duration-200"
-              >
-                <div className="absolute top-3 right-4 font-montserrat font-bold text-5xl text-gray-50 leading-none select-none">
-                  {step.num}
-                </div>
-                <div className="w-10 h-10 rounded-lg bg-[hsl(145,55%,35%)]/10 flex items-center justify-center mb-4">
-                  <Icon name={step.icon} fallback="Circle" size={20} className="text-[hsl(145,55%,35%)]" />
-                </div>
-                <h3 className="font-montserrat font-bold text-sm text-[hsl(215,35%,12%)] mb-2 leading-snug">
-                  {step.title}
-                </h3>
-                <p className="text-xs text-[hsl(215,15%,55%)] leading-relaxed">
-                  {step.desc}
-                </p>
-                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-[hsl(145,55%,35%)] group-hover:w-full transition-all duration-300" />
+        <div className="grid md:grid-cols-4 gap-5 mb-12">
+          {steps.map((step, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow duration-200"
+            >
+              <div className="absolute top-3 right-4 font-montserrat font-bold text-5xl text-gray-50 leading-none select-none">
+                {step.num}
               </div>
-            ))}
-          </div>
+              <div className="w-10 h-10 rounded-lg bg-[hsl(213,72%,28%)]/10 flex items-center justify-center mb-4">
+                <Icon name={step.icon} fallback="Circle" size={20} className="text-[hsl(213,72%,28%)]" />
+              </div>
+              <h3 className="font-montserrat font-bold text-sm text-[hsl(215,35%,12%)] mb-2 leading-snug">
+                {step.title}
+              </h3>
+              <p className="text-xs text-[hsl(215,15%,55%)] leading-relaxed">
+                {step.desc}
+              </p>
+              <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-[hsl(213,72%,28%)] group-hover:w-full transition-all duration-300" />
+            </div>
+          ))}
         </div>
 
         {/* Необходимые документы */}
