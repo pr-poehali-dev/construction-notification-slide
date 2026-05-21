@@ -118,7 +118,7 @@ export default function Index() {
                   <Icon name="MapPin" size={15} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-white font-montserrat font-bold text-base leading-snug">Согласование строительства домов в зоне подтопления, приаэродромной территории, границе лесных насаждений и других ЗОУИТ</p>
+                  <p className="text-white font-montserrat font-bold text-base leading-snug">Согласование строительства домов в охранных и специальных зонах, сокращение отступов от границ.</p>
                 </div>
               </div>
             </div>
