@@ -127,7 +127,7 @@ export default function Index() {
           <div className="flex flex-wrap gap-6 mt-6 animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0 }}>
             <div className="flex items-center gap-2 text-white text-sm font-medium">
               <Icon name="Calendar" size={15} className="text-[hsl(40,85%,60%)]" />
-              <span>Статья 51.1 ГрК РФ</span>
+              <span>Гарантия результата</span>
             </div>
             <div className="flex items-center gap-2 text-white text-sm font-medium">
               <Icon name="MapPin" size={15} className="text-[hsl(40,85%,60%)]" />
