@@ -238,10 +238,10 @@ export default function Index() {
                 <div className="w-10 h-10 rounded-lg bg-[hsl(213,72%,28%)]/10 flex items-center justify-center mb-4">
                   <Icon name={step.icon} fallback="Circle" size={20} className="text-[hsl(213,72%,28%)]" />
                 </div>
-                <h3 className="font-montserrat font-bold text-sm text-[hsl(215,35%,12%)] mb-2 leading-snug">
+                <h3 className="font-montserrat font-bold text-base text-[hsl(215,35%,12%)] mb-2 leading-snug">
                   {step.title}
                 </h3>
-                <p className="text-xs text-[hsl(215,15%,55%)] leading-relaxed">
+                <p className="text-sm text-[hsl(215,25%,35%)] leading-relaxed font-medium">
                   {step.desc}
                 </p>
                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-[hsl(213,72%,28%)] group-hover:w-full transition-all duration-300" />
