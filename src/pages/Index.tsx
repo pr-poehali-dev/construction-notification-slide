@@ -118,26 +118,26 @@ export default function Index() {
                   <Icon name="MapPin" size={15} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-white font-montserrat font-semibold text-sm leading-snug">Согласование строительства домов в зоне подтопления, приаэродромной территории, границе лесных насаждений и других ЗОУИТ</p>
+                  <p className="text-white font-montserrat font-bold text-base leading-snug">Согласование строительства домов в зоне подтопления, приаэродромной территории, границе лесных насаждений и других ЗОУИТ</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="flex flex-wrap gap-6 mt-6 animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0 }}>
-            <div className="flex items-center gap-2 text-blue-100 text-sm">
+            <div className="flex items-center gap-2 text-white text-sm font-medium">
               <Icon name="Calendar" size={15} className="text-[hsl(40,85%,60%)]" />
               <span>Статья 51.1 ГрК РФ</span>
             </div>
-            <div className="flex items-center gap-2 text-blue-100 text-sm">
+            <div className="flex items-center gap-2 text-white text-sm font-medium">
               <Icon name="MapPin" size={15} className="text-[hsl(40,85%,60%)]" />
               <span>Краснодарский край</span>
             </div>
-            <div className="flex items-center gap-2 text-blue-100 text-sm">
+            <div className="flex items-center gap-2 text-white text-sm font-medium">
               <Icon name="Clock" size={15} className="text-[hsl(40,85%,60%)]" />
               <span>Ответ — 7 рабочих дней</span>
             </div>
-            <div className="flex items-center gap-2 text-blue-100 text-sm">
+            <div className="flex items-center gap-2 text-white text-sm font-medium">
               <Icon name="ShieldCheck" size={15} className="text-[hsl(40,85%,60%)]" />
               <span>Без ошибок и отказов</span>
             </div>
